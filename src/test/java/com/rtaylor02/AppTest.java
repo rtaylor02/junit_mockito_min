@@ -1,9 +1,10 @@
 package com.rtaylor02;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Unit test for simple App.
@@ -12,11 +13,12 @@ public class AppTest {
     @InjectMocks
     private App systemUnderTest;
 
-    /**
-     * Rigorous Test :-)
+    /*
+    Canary test
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    public void shouldJustWork() {
+        assertFalse(false);
         assertTrue(true);
     }
 }
