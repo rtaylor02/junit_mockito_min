@@ -34,3 +34,18 @@ This project's pom only has 2 dependencies which are deemed sufficient for junit
     <scope>test</scope>
 </dependency>
 ```
+
+Another approach would be just 2 below, where junit-jupiter includes: junit-jupiter-engine, junit-jupiter-api, junit-jupiter-params.
+```
+<dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-junit-jupiter</artifactId>
+  <version>5.13.0</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <scope>test</scope>
+</dependency>
+```
